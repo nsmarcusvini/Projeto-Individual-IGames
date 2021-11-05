@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        /* *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.header{
+    height: 100px;
+    background-color:black;
+    border: black 3px ridge;
+    
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+} */
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            height: 100px;
+            background-color: black;
+            border: black 3px ridge;
+
+        }
+
+        .container {
+            width: 80%;
+            height: 100%;
+            cursor: pointer;
+            margin: auto;
+            color: whitesmoke;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .proposito .container .mvv {
+            margin-top: 50px;
+            width: 100%;
+
+
+        }
+
+        .proposito .container h2 {
+            color: black;
+        }
+
+        .navbar {
+            background-color: black;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        .header h1 {
+            color: whitesmoke;
+        }
+
+        .navbar li {
+            font-weight: lighter;
+            color: whitesmoke;
+        }
+
+        .navbar .active {
+            font-weight: bolder;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .baner {
+            height: 600px;
+            background-color: red;
+            background-image: url(https://media.istockphoto.com/photos/geometry-neon-lights-in-the-room-with-modern-blue-ambient-lights-picture-id1309172130?b=1&k=20&m=1309172130&s=170667a&w=0&h=-6nle9tdjIqSGJd5Fayj3GwRIQi9yZ9zYJJ4HoEYf8E=
+);
+            background-size: 490px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+
+        }
+
+
+        .msg {
+            color: whitesmoke;
+            font-size: 30px;
+            width: 10%;
+            margin-right: 50%;
+        }
+
+        .msg2 {
+            color: whitesmoke;
+            font-size: 30px;
+            width: 10%;
+            margin-left: 30px;
+        }
+
+
+        .msg span {
+            font-weight: bolder;
+        }
+
+        .proposito {
+            height: 450px;
+            background-image: url(https://media.istockphoto.com/photos/game-background-picture-id1061119906?k=20&m=1061119906&s=612x612&w=0&h=L9VfCtkYb1OKbF9OVo2x1hf_pDX4A-7BJwVm6wEhm0E=);
+
+            border-radius: 30px;
+        }
+
+        .proposito .container .mvv img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .proposito .container .mvv {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .proposito .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .proposito .container h3 {
+            font-weight: bolder;
+            margin: 25px 0;
+            font-weight: bolder;
+        }
+
+        .proposito .container .mvv div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25vw;
+            text-align: center;
+        }
+
+        .footer {
+            background-image: url(https://media.istockphoto.com/photos/game-background-picture-id1061119906?k=20&m=1061119906&s=612x612&w=0&h=L9VfCtkYb1OKbF9OVo2x1hf_pDX4A-7BJwVm6wEhm0E=);
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+
+        }
+
+        .footer p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1><b>𝕀𝔾𝕒𝕞𝕖𝕤</b></h1>
+            <ul class="navbar">
+                <li class="active"> <u><a href="index.html">𝕴𝖓𝖎𝖈𝖎𝖔</a></u></li>
+
+                <li><u><a href="simulador.html">𝕾𝕴𝖒𝖚𝖑𝖆𝖉𝖔𝖗 𝕱𝖎𝖓𝖆𝖓𝖈𝖊𝖎𝖗𝖔</a></u></li>
+                <li>|</li>
+                <li><u><a href="dashboard.html">𝕯𝖆𝖘𝖍𝖇𝖔𝖆𝖗𝖉</a></u></li>
+                <li><u><a href="login.html">𝕷𝖔𝖌𝖎𝖓</a></u></li>
+                <li><u><a href="cadastro.html">𝕮𝖆𝖉𝖆𝖘𝖙𝖗𝖔</a></u></li>
+            </ul>
+        </div>
+        <div class="baner">
+            <div class="formlogin">
+                <h2 class="bemvindo" style="background-color: rgba(215, 210, 252, 0.5); color: lightblue;">Seja
+                    Bem-Vindo á nossa Review, lançamentos, notícias e tudo sobre o mundo dos games!
+                </h2> <br><br>
+
+                <div class="email">
+                    <span style="color: whitesmoke;">E-mail:</span>
+                    <input id="email" type="text" placeholder="Insira seu e-mail:">
+                    <div class="idade">
+                        <span style="color: whitesmoke;">Idade:</span>
+                        <input type="text" id="idade" placeholder="Insira sua idade:">
+                    </div>
+                </div>
+                <div class="senha">
+                    <span style="color: whitesmoke;">Senha:</span>
+                    <input type="password" id="senha" placeholder="* * * * * * * * * ">
+                </div>
+                <div class="conf_senha">
+                    <span style="color: whitesmoke;">Confirme sua senha:</span>
+                    <input type="password" id="conf_senha" placeholder="* * * * * * * * * ">
+                </div>
+                <br><br>
+                <button style="background-color: pink; cursor: pointer;" onclick="entrar()">Entrar</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2 style="color: white;">ℙ𝕝𝕒𝕥𝕒𝕗𝕠𝕣𝕞𝕒𝕤 - </h2>
+
+
+
+            <li><u><a style="text-decoration: none; color: white;"
+                        href="https://www.playstation.com/pt-br/ps5/">Playstation
+                        5</a></u></li>
+
+            <li><u><a style="text-decoration: none; color: white;"
+                        href="https://www.xbox.com/pt-BR/consoles/xbox-one-x">Xbox One X</a></u></li>
+
+            <li><u><a style="text-decoration: none; color: white;"
+                        href="https://www.xbox.com/pt-BR/consoles/xbox-one-s">Xbox One Series S</a></u></li>
+
+            <li><u><a style="text-decoration: none; color: white;"
+                        href="https://www.nintendo.com/pt_BR/switch/system/">Nintendo Switch</a></u></li>
+            </p>
+        </div>
+</body>
+
+</html>
+<script>
+    function entrar() {
+        if (email.value == 'marcus.souza@bandtec.com.br' && senha.value == 'bandtec123' && idade.value >= 18) {
+            alert('Seja Bem - Vindo !')
+            window.location = "login.html";
+
+        }
+        else { alert('Senha ou e-mail incorretos / Ou usuário menor de idade : Digite novamente') }
+
+
+
+    }
+    // while(true){
+    //     bemvindo.innerHTML = `<span style="color: red;">Seja Bem-Vindo á nossa Review, lançamentos, notícias e tudo sobre o mundo dos games!</span>`;
+    // }
+</script>
