@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>𝕀𝔾𝕒𝕞𝕖𝕤</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="./assets/js/funcoes.js"></script>
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1377/1377875.png">
+    
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--header inicio-->
+    <div class="header">
+        <div class="container">
+            <h1>𝕀𝔾𝕒𝕞𝕖𝕤</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">
+                        𝕴𝖓𝖎𝖈𝖎𝖔 
+                    </a>
+                </li>
+                <li>
+                    <a href="./simulador.html">𝕾𝖎𝖒𝖚𝖑𝖆𝖉𝖔𝖗</a>    
+                </li>
+                <li>|</li>
+                <li >
+                    <a href="./login.html">𝕷𝖔𝖌𝖎𝖓</a>
+                </li>
+                <li class="agora">
+                    <a href="./cadastro.html">𝕮𝖆𝖉𝖆𝖘𝖙𝖗𝖔</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header fim-->
+
+    <div class="banner-login ">
+        <div class="container ">
+            <div class="card medio">
+                <h2>Bem-vindo!</h2>
+                <div class="formulario">
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                        Nome:
+                        <input name="nome" type="text" placeholder="Ada Lovelace">
+                        <br>
+                        E-mail:
+                        <input name="email" type="text" placeholder="meuemail@provedor.com">
+                        <br>
+                        Senha:
+                        <input name="senha" type="password" placeholder="******">
+                        <br>
+                        Confirmação da Senha:
+                        <input name="confirmacao-senha" type="password" placeholder="******">
+                        <br>
+                        <button class="btn">Cadastrar</button>
+                    </form>
+                </div>
+                <div id="div_aguardar" class="loading-div">
+                    <img src="./assets/circle-loading.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer inicio-->
+   
+    <div class="footer">
+            
+        <li style="text-decoration: none; color: white;">  Plataformas:</li>
+
+        <li><u><a style="text-decoration: none; color: white;" href="https://www.playstation.com/pt-br/ps5/">Playstation 5</a></u></li>
+      
+        <li><u><a style="text-decoration: none; color: white;" href="https://www.xbox.com/pt-BR/consoles/xbox-one-x">Xbox One X</a></u></li>
+        
+        <li><u><a style="text-decoration: none; color: white;" href="https://www.xbox.com/pt-BR/consoles/xbox-one-s">Xbox One Series S</a></u></li>
+        
+        <li><u><a style="text-decoration: none; color: white;" href="https://www.nintendo.com/pt_BR/switch/system/">Nintendo Switch</a></u></li></p>
+    </div>
+
+    <!--footer fim-->
+    
+
+</body>
+
+</html>
+
+<script>
+
+    function limparFormulario() {
+        document.getElementById("form_cadastro").reset();
+    }
+
+    function cadastrar() {
+        aguardar();
+
+        var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
+
+        var nome = formulario.get("nome");
+        var email = formulario.get("email");
+        var senha = formulario.get("senha");
+        var confirmacaoSenha = formulario.get("confirmacao-senha");
+
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+        if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
+            
+            window.alert("Preencha todos os campos para prosseguir!");
+            if (nome == "")  {
+                console.log('nome está em branco')
+            }
+            if (email == "" )  {
+                console.log('email está em branco')
+            }
+            if (senha == "" )  {
+                console.log('senha está em branco')
+            }
+            if (confirmacaoSenha == "" )  {
+                console.log('confirmacaoSenha está em branco')
+            }
+            finalizarAguardar();
+            return false;
+        }
+        
+        if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+        
+        if (senha != confirmacaoSenha) {
+            window.alert("As senhas inseridas devem ser iguais para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+                window.location = "login.html";
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+
+</script>
