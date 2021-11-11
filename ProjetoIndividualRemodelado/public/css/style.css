@@ -182,7 +182,7 @@ body {
 /* LOGIN */
 
 .banner-login {
-    color: white;
+    color: black;
     height: 550px;
     /* border: 3px solid yellow; */
     background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
@@ -198,7 +198,7 @@ body {
 }
 
 .banner-login {
-    color: whitesmoke;
+    color: white;
 }
 
 .banner-login .card {
@@ -384,7 +384,7 @@ form {
 }
 
 /* pagina extra - simulador */
-.simulador {
+.noticia {
     color: white;
 }
 
