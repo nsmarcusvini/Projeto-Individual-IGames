@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Exo 2';
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+   
     background-image: url(https://images6.alphacoders.com/106/thumbbig-1062524.webp);
     border-radius: 30px;
 }
@@ -55,14 +55,14 @@ body {
 }
 
 .banner .container {
-    /* border: 3px solid green; */
+   
     height: 500px;
     display: flex;
     align-items: center;
 }
 
 .banner p {
-    /* border: 3px solid cyan; */
+
     width: 50%;
     margin: 0;
     padding: 0;
@@ -87,11 +87,11 @@ body {
     font-weight: 800;
 }
 
-/* missao visao valores */
+
 
 .social {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71m2UFoeqIL.png);
-    /* border: 3px solid yellowgreen; */
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
+
     padding: 50px 0;
     border-radius: 30px;
     
@@ -102,12 +102,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    /* border: 3px solid blue; */
+    
 }
 
-/* usar este bloco para explicar margin e padding*/
+
 .social .titulo {
-    /* border: 3px solid pink; */
+    
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -123,12 +123,12 @@ body {
     text-align: center;
     color: whitesmoke;
     margin: 0;
-    /* border: 3px solid orange; */
+  
 }
 
 .social .boxes {
     display: flex;
-    /* border: 3px solid blue; */
+    
 }
 
 .social .box {
@@ -138,7 +138,7 @@ body {
     flex-direction: column;
     text-align: center;
     width: 33%;
-    /* border: 3px solid yellow; */
+    
 }
 .msg_cor{
     color: whitesmoke;
@@ -155,14 +155,14 @@ body {
 }
 
 .social .box h4 {
-    color: #E6005A;
+    color:white;
     margin-top: 30px;
 }
 
-/* FOOTER */
+
 
 .footer {
-    background-color: black;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
     height: 150px;
     color: black;
     border-radius: 30px;
@@ -198,11 +198,11 @@ body {
 }
 
 .banner-login {
-    color: #E6005A;
+    color: whitesmoke;
 }
 
 .banner-login .card {
-    background-color: #E5E5E5;
+    background-image: url(https://images.unsplash.com/photo-1522069213448-443a614da9b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRleHR1cmElMjBnYW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     height: 450px;
     width: 400px;
     display: flex;
@@ -211,6 +211,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    border-radius:30px ;
 }
 
 
@@ -231,7 +232,7 @@ button {
 
 input {
     height: 30px;
-    border: 2px solid #E6005A;
+    border: 2px solid red;
     border-radius: 10px;
 }
 
@@ -242,11 +243,24 @@ input {
     font-weight: 600;
     font-size: 18px;
     padding: 10px 15px;
-    color: white;
-    background-color: #E6005A;
+    color: whitesmoke;
+    background-color: red;
     width: 120px;
     align-self: center;
+    
 }
+.btn {
+    color: white;
+    background: red;
+    transition: background 1s;
+    border-radius: 10px;
+}
+  
+  .btn:hover,
+  .btn:focus {
+    background: black; 
+}
+  
 
 
 
@@ -373,3 +387,21 @@ form {
 .simulador {
     color: white;
 }
+
+.botao {
+    color: white;
+    background: red;
+    transition: background 1s;
+    border-radius: 10px;
+    width: 120px;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 10px 15px;
+
+}
+  
+  .botao:hover,
+  .botao:focus {
+    background: black; 
+}
+  
