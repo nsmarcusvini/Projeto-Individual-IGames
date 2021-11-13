@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Exo 2';
    
-    background-image: url(https://images6.alphacoders.com/106/thumbbig-1062524.webp);
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
     border-radius: 30px;
 }
 
@@ -11,11 +11,22 @@ body {
     width: 80%;
     margin: auto;
 }
-
+.img_game{
+    background-image: url(https://i.pinimg.com/originals/a1/9d/14/a19d149acd516549f0a2ac035b88cd35.gif);
+    background-size: 70%;
+    width: 800px;
+    height: 400px;
+    margin-top: 80px;
+    border-radius: 20px;
+   margin-left: 300px;
+}
 .header {
-    color: rgb(143, 0, 0);
-    border-bottom: 3px solid rgb(240, 234, 234);
+    color: black;
+    border-bottom: 3px solid rgb(8, 8, 8);
     border-radius: 30px;
+    font-weight: bolder;
+    background-color: gray;
+    
     
 }
 
@@ -28,7 +39,8 @@ body {
 
 .header a {
     text-decoration: none;
-    color: rgb(143, 0, 0);
+    color: black;
+    box-shadow: black;
     
 }
 
@@ -42,7 +54,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
-    color: rgb(143, 0, 0);
+    color: black
     
 }
 
@@ -61,6 +73,8 @@ body {
     align-items: center;
 }
 
+
+
 .banner p {
 
     width: 50%;
@@ -71,16 +85,18 @@ body {
     margin-left: 350px;
 }
 .msg{
-    color: whitesmoke;
+    
     font-size: 30px;
-    background-color: rgba(7, 7, 7, 0.5);
-    color: rgb(143, 0, 0);
+    background-color: rgba(248, 247, 247, 0.5);
+    color: black;
+    border-radius: 20px
 }
 .msg2{
-    color: whitesmoke;
+    
     font-size: 30px;
-    color: rgb(143, 0, 0);
-    background-color: rgba(7, 7, 7, 0.5);
+    color: black;
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 20px;
 }
 
 .banner span {
@@ -90,8 +106,7 @@ body {
 
 
 .social {
-    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
-
+    background-image: url();
     padding: 50px 0;
     border-radius: 30px;
     
@@ -116,13 +131,14 @@ body {
 .social h2 {
     display: flex;
     padding: 20px;
-    background-color: rgb(143, 0, 0);;
+    background-color: #d3d3d3;
     border-radius: 20px;
     align-self: center; 
     justify-self: center;
     text-align: center;
-    color: whitesmoke;
+    color: black;
     margin: 0;
+    box-shadow: gray;
   
 }
 
@@ -186,7 +202,9 @@ body {
     height: 550px;
     /* border: 3px solid yellow; */
     background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-    background-size: cover;
+    background-image: url(https://c.tenor.com/YQ4RvEq1GX8AAAAM/up.gif);
+    border-radius: 50px;
+    
 }
 
 .banner-login .container {
@@ -198,11 +216,11 @@ body {
 }
 
 .banner-login {
-    color: rgb(165, 0, 0);
+    color: white;
 }
 
 .banner-login .card {
-    background-image: url(https://images.unsplash.com/photo-1522069213448-443a614da9b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRleHR1cmElMjBnYW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://image.freepik.com/vetores-gratis/fundo-3d-de-textura-de-fibra-de-carbono-realista_1017-33439.jpg);
     height: 450px;
     width: 400px;
     display: flex;
@@ -232,7 +250,7 @@ button {
 
 input {
     height: 30px;
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 10px;
 }
 
@@ -244,21 +262,21 @@ input {
     font-size: 18px;
     padding: 10px 15px;
     color: whitesmoke;
-    background-color: red;
+    background-color: black;
     width: 120px;
     align-self: center;
     
 }
 .btn {
     color: white;
-    background: red;
+    background: black;
     transition: background 1s;
     border-radius: 10px;
 }
   
   .btn:hover,
   .btn:focus {
-    background: black; 
+    background: gray; 
 }
   
 
@@ -390,7 +408,7 @@ form {
 
 .botao {
     color: white;
-    background: red;
+    background: gray;
     transition: background 1s;
     border-radius: 10px;
     width: 120px;

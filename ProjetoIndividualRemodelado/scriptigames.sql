@@ -1,24 +1,18 @@
-/*
-Catalogo de Jogos igames
-*/
-
-drop database if exists igames;
-
 create database igames;
 use igames;
 
-create table cadastro(
-   id_cadastro int primary key auto_increment,
+create table usuario(
+   id_usuario int primary key auto_increment,
    nome varchar(45),
-   email     varchar(45),
-   senha  varchar(8),
-   conf_senha  varchar(8)
-);
+   idade varchar(45),
+   email   varchar(45),
+   senha  varchar(8)
+   );
 
 
 
 create table genero(
-   id_generoint int primary key auto_increment ,
+   id_genero int primary key auto_increment ,
    nome_genero varchar(45)
 );
 
@@ -32,5 +26,4 @@ create table jogo(
    dt_lancamento date,
    foreign key (fkgenero) references genero (id_genero)
    );
-
-
+select *from usuario;
