@@ -41,91 +41,109 @@
     </div>
 
 
-    <!-- simulador inicio -->
+
     <div class="noticia">
         <div class="container">
             <h2>ℕ𝕠𝕥𝕚𝕔𝕚𝕒𝕤</h2>
             <br>
+            <br><br>
+            <center>
+                <br><br>
+                <h3>Clique no botão abaixo e veja algumas das noticias mais recentes:</h3>
+                <button onclick="noticia()" class="botao">Ver noticias</button>
+            </center>
 
-            <p>Sony pode reduzir produção do PlayStation 5; entenda
-                <u><li><a style="text-decoration: none; color: white;" href="https://br.ign.com/ps5/94482/news/sony-pode-reduzir-producao-do-playstation-5-entenda">Projeção de unidades fabricadas deve dimuinuir até março de 2022</a></li></u></p>
-                <br>
-
-            <p>Dois novos jogos exclusivos do Xbox foram revelados hoje pelo site Windows Central, especializado em notícias sobre os produtos da Microsoft.
-                Os títulos são criações da Compulsion Games e da Obsidian Entertainment, dois estúdios que fazem parte do Xbox Game Studios. Por se tratarem de propriedades da própria Microsoft, os dois games devem entrar para o catálogo do Xbox Game Pass já no lançamento.
-                O primeiro jogo revelado foi projeto Midnight, da Compulsion. De acordo com o site, o estúdio responsável pela criação de We Happy Few está trabalhando neste título de ação em terceira pessoa. O site teve acesso a três imagens do projeto, todas de estágios bem iniciais de produção, que podem ser vistas logo abaixo.</p>
             <br>
-                <p><u><li><a style="text-decoration: none; color: white;" href="https://geek360.com.br/melhores-jogos-exclusivos-para-cada-console/">Melhores Jogos Exclusivos Para Cada Console</a></li></u></p>
-                <p>E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?</p>
-                <br>
-                <br>
-                
-                    <br>
-                    
-                    <br><br><br>
-                    <u><p style="color: white;">Abaixo confira jogos do momento:</p></u>
+            <br>
+            <div id="msg_noticia"></div>
+            <br>
+
+            <br><br><br>
+            <u>
+                <p style="color: white;">Abaixo confira jogos do momento:</p>
+            </u>
             <br>
             <b> Days Gone</b>
             <br>
-           <p style="color: white;">Impressionando muito desde os seus primeiros trailers e gameplays em 2016, Days Gone foi um grande sucesso do PlayStation 4 e que finalmente deu as caras no PC. Com um jogo bem otimizado, ótimos gráficos, ótimo gameplay e uma boa história por trás fica difícil não colocá-lo na lista.</p> 
-                <br><br>
-               <b>Resident Evil Village</b>
-                <br>
-               <p  style="color: white;">Apesar dos memes e grande foco da atenção do jogo ter se voltado para uma de suas vilãs principais, Lady Dimitrescu, o jogo em sí vem recebendo vários elogios da grande maioria do público, com a única crítica sendo a duração da campanha.</p> 
-                <br><br>
-                <b>Hitman 3</b>
-                <br>
-               <p  style="color: white;">A continuação direta de Hitman 2 oferece não só mapas novos como também visuais renovados dos mesmo níveis que apareceram nos últimos dois jogos da franquia. Como de costume o player joga como o Agente 47 e ele precisa completar várias missões de assassinato, como estes são feitos é o player que decide.</p>
-               <br><br>
-               <b>Cyberpunk 2077</b>
-                <br>
-               <p  style="color: white;">Nem parece que já se passaram 8 anos desde o anúncio do jogo, lá em Outubro de 2012. Bom, um dos jogos mais esperados da decada finalmente chega em seu lançamento, com uma Night City extremamente viva e cheia de coisas pra fazer, o RPG em primeira pessoa deixará muitas pessoas extremamente entertidas por pelo menos alguns meses.</p>
-               <br><br>
-               <b>Horizon Zero Dawn</b>
-                <br>
-               <p  style="color: white;">O jogo que era um exclusivo de PlayStation 4 até o dia 7 de Agosto de 2020 chega a plataforma PC com os mesmos (lindíssimos) visuais que na versão de consoles. O jogo conta a história de Aloy em busca de respostas sobre o seu passado em um mundo dominado pelas máquinas.</p>
-            </div>
-
-                     <span style="margin-left: 300px;">Escolha um tipo de jogo que nós iremos te redirecionar para os games com base na sua escolha:</span> 
-                     <br><br>
-                    <center><select name="" id="tipo_jogo">
-                        <option value="">Selecione um tipo de jogo!</option>
-                        <option id="acao" value="acao">Ação / Guerra</option>
-                        <option id="online" value="online">Modo Online</option>
-                        <option id="livre" value="livre">Modo livre</option>
-                        <option id="historia" value="historia">Modo História</option>
-                        <option id="terror" value="terror">Terror</option>
-                        <option id="arcade" value="arcade">Arcade</option>
-                    </select>
-                </center>
-                </p>
-            <center><button onclick="bt()" class="botao">Clique aqui !</button></center>
+            <p style="color: white;">Impressionando muito desde os seus primeiros trailers e gameplays em 2016, Days
+                Gone foi um grande sucesso do PlayStation 4 e que finalmente deu as caras no PC. Com um jogo bem
+                otimizado, ótimos gráficos, ótimo gameplay e uma boa história por trás fica difícil não colocá-lo na
+                lista.</p>
             <br><br>
+            <b>Resident Evil Village</b>
             <br>
+            <p style="color: white;">Apesar dos memes e grande foco da atenção do jogo ter se voltado para uma de suas
+                vilãs principais, Lady Dimitrescu, o jogo em sí vem recebendo vários elogios da grande maioria do
+                público, com a única crítica sendo a duração da campanha.</p>
+            <br><br>
+            <b>Hitman 3</b>
             <br>
-            <b style="margin-left: 100px;">Se você não faz ideia de que jogo jogar não se preocupe , nosso sitema te disponibiliza games aleatórios com base nos melhores jogos do momento: <br>
-             <span style="margin-left: 100px;">Clique no bota abaixo e iremos te redirecionar !</span></b>
-             <br><br>
-             <center><button onclick="bt2()" class="botao">Clique aqui !</button></center>
-             <br><br><br><br>
-             
-            
+            <p style="color: white;">A continuação direta de Hitman 2 oferece não só mapas novos como também visuais
+                renovados dos mesmo níveis que apareceram nos últimos dois jogos da franquia. Como de costume o player
+                joga como o Agente 47 e ele precisa completar várias missões de assassinato, como estes são feitos é o
+                player que decide.</p>
+            <br><br>
+            <b>Cyberpunk 2077</b>
+            <br>
+            <p style="color: white;">Nem parece que já se passaram 8 anos desde o anúncio do jogo, lá em Outubro de
+                2012. Bom, um dos jogos mais esperados da decada finalmente chega em seu lançamento, com uma Night City
+                extremamente viva e cheia de coisas pra fazer, o RPG em primeira pessoa deixará muitas pessoas
+                extremamente entertidas por pelo menos alguns meses.</p>
+            <br><br>
+            <b>Horizon Zero Dawn</b>
+            <br>
+            <p style="color: white;">O jogo que era um exclusivo de PlayStation 4 até o dia 7 de Agosto de 2020 chega a
+                plataforma PC com os mesmos (lindíssimos) visuais que na versão de consoles. O jogo conta a história de
+                Aloy em busca de respostas sobre o seu passado em um mundo dominado pelas máquinas.</p>
+        </div>
+
+        <span style="margin-left: 300px;">Escolha um tipo de jogo que nós iremos te redirecionar para os games com base
+            na sua escolha:</span>
+        <br><br>
+        <center><select name="" id="tipo_jogo">
+                <option value="">Selecione um tipo de jogo!</option>
+                <option id="acao" value="acao">Ação / Guerra</option>
+                <option id="online" value="online">Modo Online</option>
+                <option id="livre" value="livre">Modo livre</option>
+                <option id="historia" value="historia">Modo História</option>
+                <option id="terror" value="terror">Terror</option>
+                <option id="arcade" value="arcade">Arcade</option>
+            </select>
+        </center>
+        </p>
+        <center><button onclick="bt()" class="botao">Clique aqui !</button></center>
+        <br><br>
+        <br>
+        <br>
+        <b style="margin-left: 100px;">Se você não faz ideia de que jogo jogar não se preocupe , nosso sitema te
+            disponibiliza games aleatórios com base nos melhores jogos do momento: <br>
+            <span style="margin-left: 100px;">Clique no bota abaixo e iremos te redirecionar !</span></b>
+        <br><br>
+        <center><button onclick="bt2()" class="botao">Clique aqui !</button></center>
+        <br><br><br><br>
+
+
     </div>
     <!-- simulador fim -->
 
     <!--footer inicio-->
-   
-    <div class="footer">
-            
-        <li style="text-decoration: none; color: white;">  Plataformas:</li>
 
-        <li><u><a style="text-decoration: none; color: white;" href="https://www.playstation.com/pt-br/ps5/">Playstation 5</a></u></li>
-      
-        <li><u><a style="text-decoration: none; color: white;" href="https://www.xbox.com/pt-BR/consoles/xbox-one-x">Xbox One X</a></u></li>
-        
-        <li><u><a style="text-decoration: none; color: white;" href="https://www.xbox.com/pt-BR/consoles/xbox-one-s">Xbox One Series S</a></u></li>
-        
-        <li><u><a style="text-decoration: none; color: white;" href="https://www.nintendo.com/pt_BR/switch/system/">Nintendo Switch</a></u></li></p>
+    <div class="footer">
+
+        <li style="text-decoration: none; color: white;"> Plataformas:</li>
+
+        <li><u><a style="text-decoration: none; color: white;" href="https://www.playstation.com/pt-br/ps5/">Playstation
+                    5</a></u></li>
+
+        <li><u><a style="text-decoration: none; color: white;"
+                    href="https://www.xbox.com/pt-BR/consoles/xbox-one-x">Xbox One X</a></u></li>
+
+        <li><u><a style="text-decoration: none; color: white;"
+                    href="https://www.xbox.com/pt-BR/consoles/xbox-one-s">Xbox One Series S</a></u></li>
+
+        <li><u><a style="text-decoration: none; color: white;"
+                    href="https://www.nintendo.com/pt_BR/switch/system/">Nintendo Switch</a></u></li>
+        </p>
     </div>
 
     <!--footer fim-->
@@ -135,67 +153,98 @@
 
 </html>
 <script>
-    function bt(){
-        
-            if(tipo_jogo.value == acao.value){ 
-                window.location = "https://www.google.com/search?q=melhores+jogos+de+a%C3%A7%C3%A3o+%2F+tiro&oq=melhores+jogos+de+a%C3%A7%C3%A3o+%2F+tiro&aqs=chrome..69i57j33i22i29i30l9.7736j0j4&sourceid=chrome&ie=UTF-8";
-            }
-        
-           else if(tipo_jogo.value == online.value){ 
-                window.location = "https://www.maioresemelhores.com/jogos-online-para-pc/";
-            }
-        
-            else if(tipo_jogo.value == livre.value){ 
-                window.location = "https://mmovicio.com.br/25-melhores-jogos-de-mundo-aberto-para-jogar-agora/";
-            }
-        
-            else if(tipo_jogo.value == historia.value){ 
-                window.location = "https://www.google.com/search?q=modo+historia+melhores+jogos&oq=modo+historia+melhores+&aqs=chrome.1.69i57j33i22i29i30.6332j0j4&sourceid=chrome&ie=UTF-8";
-            }
-        
-            else if(tipo_jogo.value == terror.value){ 
-                window.location = "https://www.google.com/search?q=terror+melhores+jogos&sxsrf=AOaemvKmKGWHPvYpeXIm3lpBLW7kRzVW3g%3A1636763033222&ei=mQWPYfqHDdvU1sQPgdWQsA8&oq=terror+melhores+jogos&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEAcQBRAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeOgQIABANOggIABAIEAcQHkoECEEYAFAAWP4FYIcKaABwAHgAgAGaAYgB_wWSAQMwLjaYAQCgAQHAAQE&sclient=gws-wiz&ved=0ahUKEwi6uLS5iZT0AhVbqpUCHYEqBPYQ4dUDCA4&uact=5";
-            }
-            else if(tipo_jogo.value == arcade.value){ 
-                window.location = "https://www.google.com/search?q=arcade+melhores+jogos&sxsrf=AOaemvLuQ-oVGoOm54F9k1TRTPY7JjcpYA%3A1636763111996&ei=5wWPYeHXO7nf1sQPyauCsAs&oq=arcade+melhores+jogos&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAFEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeOgcIABBHELADOgcIIxCwAhAnOgQIABANOgYIABAHEB46CAgAEAgQBxAeSgQIQRgAULgJWJgTYPEWaABwA3gAgAGDAYgBkQiSAQMwLjmYAQCgAQHIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwih5_veiZT0AhW5r5UCHcmVALYQ4dUDCA4&uact=5";
-            }
-        
-     }   
-     function bt2(){
+    function bt() {
+
+        if (tipo_jogo.value == acao.value) {
+            window.location = "https://www.google.com/search?q=melhores+jogos+de+a%C3%A7%C3%A3o+%2F+tiro&oq=melhores+jogos+de+a%C3%A7%C3%A3o+%2F+tiro&aqs=chrome..69i57j33i22i29i30l9.7736j0j4&sourceid=chrome&ie=UTF-8";
+        }
+
+        else if (tipo_jogo.value == online.value) {
+            window.location = "https://www.maioresemelhores.com/jogos-online-para-pc/";
+        }
+
+        else if (tipo_jogo.value == livre.value) {
+            window.location = "https://mmovicio.com.br/25-melhores-jogos-de-mundo-aberto-para-jogar-agora/";
+        }
+
+        else if (tipo_jogo.value == historia.value) {
+            window.location = "https://www.google.com/search?q=modo+historia+melhores+jogos&oq=modo+historia+melhores+&aqs=chrome.1.69i57j33i22i29i30.6332j0j4&sourceid=chrome&ie=UTF-8";
+        }
+
+        else if (tipo_jogo.value == terror.value) {
+            window.location = "https://www.google.com/search?q=terror+melhores+jogos&sxsrf=AOaemvKmKGWHPvYpeXIm3lpBLW7kRzVW3g%3A1636763033222&ei=mQWPYfqHDdvU1sQPgdWQsA8&oq=terror+melhores+jogos&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEAcQBRAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeOgQIABANOggIABAIEAcQHkoECEEYAFAAWP4FYIcKaABwAHgAgAGaAYgB_wWSAQMwLjaYAQCgAQHAAQE&sclient=gws-wiz&ved=0ahUKEwi6uLS5iZT0AhVbqpUCHYEqBPYQ4dUDCA4&uact=5";
+        }
+        else if (tipo_jogo.value == arcade.value) {
+            window.location = "https://www.google.com/search?q=arcade+melhores+jogos&sxsrf=AOaemvLuQ-oVGoOm54F9k1TRTPY7JjcpYA%3A1636763111996&ei=5wWPYeHXO7nf1sQPyauCsAs&oq=arcade+melhores+jogos&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAFEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeOgcIABBHELADOgcIIxCwAhAnOgQIABANOgYIABAHEB46CAgAEAgQBxAeSgQIQRgAULgJWJgTYPEWaABwA3gAgAGDAYgBkQiSAQMwLjmYAQCgAQHIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwih5_veiZT0AhW5r5UCHcmVALYQ4dUDCA4&uact=5";
+        }
+
+    }
+    function bt2() {
         var aleat = Math.random() * (10 - 1) + 1;
         var aleatorio = aleat.toFixed(0)
-        for(cont = 0; cont < aleatorio; cont++ ){
-            if(aleatorio == 1){
+        for (cont = 0; cont < aleatorio; cont++) {
+            if (aleatorio == 1) {
                 window.location = "https://www.playstation.com/pt-br/games/marvels-spider-man-miles-morales/";
             }
-            if(aleatorio == 2){
+            if (aleatorio == 2) {
                 window.location = "https://store.playstation.com/pt-br/product/UP9000-CUSA07408_00-00000000GODOFWAR";
             }
-            if(aleatorio == 3){
+            if (aleatorio == 3) {
                 window.location = "https://playvalorant.com/pt-br/";
             }
-            if(aleatorio == 4){
+            if (aleatorio == 4) {
                 window.location = "https://www.leagueoflegends.com/pt-br/";
             }
-            if(aleatorio == 5){
+            if (aleatorio == 5) {
                 window.location = "https://store.playstation.com/pt-br/product/UP9000-CUSA08966_00-DAYSGONEDGDELUXE";
             }
-            if(aleatorio == 6){
+            if (aleatorio == 6) {
                 window.location = "https://www.callofduty.com/content/atvi/callofduty/warzone/web/pt_br/home.html";
             }
-            if(aleatorio == 7){
+            if (aleatorio == 7) {
                 window.location = "https://www.rockstargames.com/V/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2FV%2Fbr&options=&locale=pt_br";
             }
-            if(aleatorio == 8){
+            if (aleatorio == 8) {
                 window.location = "https://www.rockstargames.com/reddeadredemption2/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2Freddeadredemption2%2F&options=&locale=en_us";
             }
-            if(aleatorio == 9){
+            if (aleatorio == 9) {
                 window.location = "https://store.playstation.com/pt-br/product/UP9000-CUSA07820_00-THELASTOFUSPART2";
             }
-            if(aleatorio == 10){
+            if (aleatorio == 10) {
                 window.location = "https://www.cyberpunk.net/br/pt-br/buy";
             }
 
         }
-     }
-    </script>
+    }
+    function noticia() {
+        var aleat2 = Math.random() * (3 - 1) + 1;
+        var aleatorio2 = aleat2.toFixed(0)
+        for (cont2 = 0; cont2 < aleatorio2; cont2++) {
+            if (aleatorio2 == 1) {
+                msg_noticia.innerHTML = `
+            <p>Sony pode reduzir produção do PlayStation 5; entenda
+                <u><li><a style="text-decoration: none; color: white;" href="https://br.ign.com/ps5/94482/news/sony-pode-reduzir-producao-do-playstation-5-entenda">Projeção de unidades fabricadas deve dimuinuir até março de 2022</a></li></u></p>
+                <br>
+
+            <p>Dois novos jogos exclusivos do Xbox foram revelados hoje pelo site Windows Central, especializado em notícias sobre os produtos da Microsoft.
+                Os títulos são criações da Compulsion Games e da Obsidian Entertainment, dois estúdios que fazem parte do Xbox Game Studios. Por se tratarem de propriedades da própria Microsoft, os dois games devem entrar para o catálogo do Xbox Game Pass já no lançamento.
+                O primeiro jogo revelado foi projeto Midnight, da Compulsion. De acordo com o site, o estúdio responsável pela criação de We Happy Few está trabalhando neste título de ação em terceira pessoa. O site teve acesso a três imagens do projeto, todas de estágios bem iniciais de produção, que podem ser vistas logo abaixo.</p>
+            
+                <p><u><li><a style="text-decoration: none; color: white;" href="https://geek360.com.br/melhores-jogos-exclusivos-para-cada-console/">Melhores Jogos Exclusivos Para Cada Console</a></li></u></p>
+                <p>E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?</p>
+`
+
+            }
+            else {
+                msg_noticia.innerHTML = `<p><u><li><a style="text-decoration: none; color: white;" href="https://geek360.com.br/melhores-jogos-exclusivos-para-cada-console/">Melhores Jogos Exclusivos Para Cada Console</a></li></u></p>
+                <p>E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?
+                    <br>
+                    Atualização de Warzone vai tirar o jogo de Verdansk e levar os jogadores para a ilha de Caldera
+            <br><br>
+Call Of Duty: Warzone é o jogo estilo Battle Arena da franquia que foi lançado em Março de 2020 e conquistou uma legião de jogadores. Saiu meses após o lançamento de Call Of Duty: Modern Warfare, e vem sempre trazendo atualizações, eventos e novos conteúdos das edições anteriores e posteriores à sua estreia.
+<br>
+Recentemente (05/11/2021), o mais novo jogo da franquia entrou em ação no mercado: Call Of Duty: Vanguard. O novo título se passa durante a Segunda Guerra Mundial, nos anos 30 e 40 do século passado, e muitas novidades e influências dele serão levadas para Warzone. Para renovar os ânimos dos jogadores, o Battle Arena vai ganhar um novo mapa: a ilha Caldera, no meio do Oceano Pacífico. Isso junto com as quase 40 armas temáticas da Segunda Guerra, presentes em Vanguard, que virão para o jogo.</p>`}
+
+        }
+    }
+</script>
