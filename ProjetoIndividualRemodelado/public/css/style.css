@@ -194,6 +194,7 @@ body {
     justify-content: center;
     border-radius: 30px;
     align-items: center;
+    background-size: cover;
     
 }
 
@@ -229,7 +230,7 @@ body {
 }
 
 .banner-login .card {
-    background-image: url(https://image.freepik.com/vetores-gratis/fundo-3d-de-textura-de-fibra-de-carbono-realista_1017-33439.jpg);
+    background-color: #32B9CD;
     height: 450px;
     width: 400px;
     display: flex;
@@ -415,7 +416,11 @@ form {
     color: white;
 }
 
-
+.box_noticia{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    
+}
     .botao{
         transition: all 0.5s;
         cursor: pointer;
