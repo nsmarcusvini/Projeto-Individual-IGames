@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Exo 2';
-   
-    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+    background-image: url(https://services.meteored.com/img/article/o-que-torna-o-ceu-azul-195151-1_1280.jpg);
     border-radius: 30px;
 }
 
@@ -11,21 +12,18 @@ body {
     width: 80%;
     margin: auto;
 }
-.img_game{
-    background-image: url(https://i.pinimg.com/originals/a1/9d/14/a19d149acd516549f0a2ac035b88cd35.gif);
-    background-size: 70%;
-    width: 800px;
-    height: 400px;
-    margin-top: 80px;
-    border-radius: 20px;
-   margin-left: 300px;
+
+.fundo{
+    background-attachment: fixed;
+    background-image: url(http://www.joinvillegames.com.br/blog/wp-content/uploads/2017/08/wallpaper_jllegames_6anos_super_mario_galaxy_01.jpg);
+    border-radius: 30px;
 }
 .header {
     color: black;
     border-bottom: 3px solid rgb(8, 8, 8);
     border-radius: 30px;
     font-weight: bolder;
-    background-color: gray;
+   
     
     
 }
@@ -33,8 +31,9 @@ body {
 .header .container {
     display: flex;
     justify-content: space-between;
-   
 }
+
+
 
 
 .header a {
@@ -84,19 +83,28 @@ body {
     font-size: 36px;
     margin-left: 350px;
 }
-.msg{
-    
+.msg_mundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
-    background-color: rgba(248, 247, 247, 0.5);
+    background-color: rgba(252, 252, 252, 0.5);
     color: black;
-    border-radius: 20px
-}
-.msg2{
+    border-radius: 20px;
+    height:300px
+
     
+}
+.msg_umlugar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     color: black;
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 20px;
+    
+    
 }
 
 .banner span {
@@ -106,7 +114,7 @@ body {
 
 
 .social {
-    background-image: url();
+    
     padding: 50px 0;
     border-radius: 30px;
     
@@ -178,7 +186,7 @@ body {
 
 
 .footer {
-    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
+    background-image: url(https://i.pinimg.com/736x/4c/cb/bd/4ccbbdfbbc2d5fdddc1359856be97183.jpg);
     height: 150px;
     color: black;
     border-radius: 30px;
@@ -186,6 +194,7 @@ body {
     justify-content: center;
     border-radius: 30px;
     align-items: center;
+    
 }
 
 .footer .container {
@@ -202,7 +211,7 @@ body {
     height: 550px;
     /* border: 3px solid yellow; */
     background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-    background-image: url(https://c.tenor.com/YQ4RvEq1GX8AAAAM/up.gif);
+    
     border-radius: 50px;
     
 }
@@ -406,20 +415,22 @@ form {
     color: white;
 }
 
-.botao {
-    color: white;
-    background: gray;
-    transition: background 1s;
-    border-radius: 10px;
-    width: 120px;
-    font-weight: 200;
-    font-size: 12px;
-    padding: 10px 15px;
 
-}
+    .botao{
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .botao:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+
   
   .botao:hover,
   .botao:focus {
-    background: black; 
+    background: rgb(236, 236, 245); 
+    border-radius: 30px;
 }
   
