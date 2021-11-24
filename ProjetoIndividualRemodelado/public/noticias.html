@@ -23,7 +23,8 @@
     <!--header inicio-->
     <div class="header">
         <div class="container">
-            <h1> <img src="https://cdn-icons-png.flaticon.com/512/1377/1377875.png" style="height: 20px; width: 20px;"> 𝕀𝔾𝕒𝕞𝕖𝕤</h1>
+            <h1> <img src="https://cdn-icons-png.flaticon.com/512/1377/1377875.png" style="height: 20px; width: 20px;">
+                𝕀𝔾𝕒𝕞𝕖𝕤</h1>
             <ul class="navbar">
                 <li>
                     <a href="./index.html">𝕴𝖓𝖎𝖈𝖎𝖔 </a>
@@ -47,21 +48,25 @@
             <h2>ℕ𝕠𝕥𝕚𝕔𝕚𝕒𝕤</h2>
             <br>
             <br><br>
-            <center>
-                <br><br>
-                <h3>Clique no botão abaixo e veja algumas das noticias mais recentes:</h3>
-                <button onclick="noticia()" class="botao">Ver noticias</button>
-            </center>
+            <div class="box_botao">
+                <center>
+                    <br><br>
+                    <h3>Clique no botão abaixo e veja algumas das noticias mais recentes:</h3>
+                    <button onclick="noticia()" class="botao">Proxima noticia</button>
+                    <button class="botao" onclick="noticia_ant()">Noticia anterior</button>
+                </center>
 
-            <br>
-            <br>
-            <div id="msg_noticia"></div>
-            <br>
-
+                <br>
+                <br>
+                <div id="msg_noticia"></div>
+                <br>
+            </div>
             <br><br><br>
             <u>
                 <div class="box_noticia">
-                   <center> <p style="color: white;">Abaixo confira jogos do momento:</p></center>
+                    <center>
+                        <p style="color: white;">Abaixo confira jogos do momento:</p>
+                    </center>
             </u>
             <br>
             <b> Days Gone</b>
@@ -204,35 +209,22 @@
 
         }
     }
-    function noticia() {
-        var aleat2 = Math.random() * (3 - 1) + 1;
-        var aleatorio2 = aleat2.toFixed(0)
-        for (cont2 = 0; cont2 < aleatorio2; cont2++) {
-            if (aleatorio2 == 1) {
-                msg_noticia.innerHTML = `
-            <p>Sony pode reduzir produção do PlayStation 5; entenda
-                <u><li><a style="text-decoration: none; color: white;" href="https://br.ign.com/ps5/94482/news/sony-pode-reduzir-producao-do-playstation-5-entenda">Projeção de unidades fabricadas deve dimuinuir até março de 2022</a></li></u></p>
-                <br>
+    var vt_noticia = ["Sony pode reduzir produção do PlayStation 5; entenda Projeção de unidades fabricadas deve dimuinuir até março de 2022","Dois novos jogos exclusivos do Xbox foram revelados hoje pelo site Windows Central, especializado em notícias sobre os produtos da Microsoft.Os títulos são criações da Compulsion Games e da Obsidian Entertainment, dois estúdios que fazem parte do Xbox Game Studios. Por se tratarem de propriedades da própria Microsoft, os dois games devem entrar para o catálogo do Xbox Game Pass já no lançamento",
+                "O primeiro jogo revelado foi projeto Midnight, da Compulsion. De acordo com o site, o estúdio responsável pela criação de We Happy Few está trabalhando neste título de ação em terceira pessoa. O site teve acesso a três imagens do projeto, todas de estágios bem iniciais de produção, que podem ser vistas logo abaixo.","E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?","Atualização de Warzone vai tirar o jogo de Verdansk e levar os jogadores para a ilha de Caldera Call Of Duty: Warzone é o jogo estilo Battle Arena da franquia que foi lançado em Março de 2020 e conquistou uma legião de jogadores. Saiu meses após o lançamento de Call Of Duty: Modern Warfare, e vem sempre trazendo atualizações, eventos e novos conteúdos das edições anteriores e posteriores à sua estreia.","Recentemente (05/11/2021), o mais novo jogo da franquia entrou em ação no mercado: Call Of Duty: Vanguard. O novo título se passa durante a Segunda Guerra Mundial, nos anos 30 e 40 do século passado, e muitas novidades e influências dele serão levadas para Warzone. Para renovar os ânimos dos jogadores, o Battle Arena vai ganhar um novo mapa: a ilha Caldera, no meio do Oceano Pacífico. Isso junto com as quase 40 armas temáticas da Segunda Guerra, presentes em Vanguard, que virão para o jogo."];
+    // function noticia() {
+    //    vt_noticia.push;
+    //     for(cont = vt_noticia.length + 1; cont >= 6; cont++) {
+           
+    //         msg_noticia.innerHTML = vt_noticia[cont];
+                     
+    //                 }
+    //     }
 
-            <p>Dois novos jogos exclusivos do Xbox foram revelados hoje pelo site Windows Central, especializado em notícias sobre os produtos da Microsoft.
-                Os títulos são criações da Compulsion Games e da Obsidian Entertainment, dois estúdios que fazem parte do Xbox Game Studios. Por se tratarem de propriedades da própria Microsoft, os dois games devem entrar para o catálogo do Xbox Game Pass já no lançamento.
-                O primeiro jogo revelado foi projeto Midnight, da Compulsion. De acordo com o site, o estúdio responsável pela criação de We Happy Few está trabalhando neste título de ação em terceira pessoa. O site teve acesso a três imagens do projeto, todas de estágios bem iniciais de produção, que podem ser vistas logo abaixo.</p>
-            
-                <p><u><li><a style="text-decoration: none; color: white;" href="https://geek360.com.br/melhores-jogos-exclusivos-para-cada-console/">Melhores Jogos Exclusivos Para Cada Console</a></li></u></p>
-                <p>E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?</p>
-`
 
-            }
-            else {
-                msg_noticia.innerHTML = `<p><u><li><a style="text-decoration: none; color: white;" href="https://geek360.com.br/melhores-jogos-exclusivos-para-cada-console/">Melhores Jogos Exclusivos Para Cada Console</a></li></u></p>
-                <p>E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?
-                    <br>
-                    Atualização de Warzone vai tirar o jogo de Verdansk e levar os jogadores para a ilha de Caldera
-            <br><br>
-Call Of Duty: Warzone é o jogo estilo Battle Arena da franquia que foi lançado em Março de 2020 e conquistou uma legião de jogadores. Saiu meses após o lançamento de Call Of Duty: Modern Warfare, e vem sempre trazendo atualizações, eventos e novos conteúdos das edições anteriores e posteriores à sua estreia.
-<br>
-Recentemente (05/11/2021), o mais novo jogo da franquia entrou em ação no mercado: Call Of Duty: Vanguard. O novo título se passa durante a Segunda Guerra Mundial, nos anos 30 e 40 do século passado, e muitas novidades e influências dele serão levadas para Warzone. Para renovar os ânimos dos jogadores, o Battle Arena vai ganhar um novo mapa: a ilha Caldera, no meio do Oceano Pacífico. Isso junto com as quase 40 armas temáticas da Segunda Guerra, presentes em Vanguard, que virão para o jogo.</p>`}
 
+    function noticia_ant() {
+        for(var cont2 = vt_noticia.length - 1; cont2 >= 0 ; cont2 --){
+            msg_noticia.innerHTML = vt_noticia[cont2];
         }
-    }
+      }
 </script>
