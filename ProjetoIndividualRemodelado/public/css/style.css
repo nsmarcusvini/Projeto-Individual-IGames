@@ -231,7 +231,8 @@ body {
 }
 
 .banner-login .card {
-    background-color: #32B9CD;
+    background-color: #6298ee;
+    border: black 3px solid;
     height: 450px;
     width: 400px;
     display: flex;

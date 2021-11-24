@@ -146,6 +146,7 @@
 
 </html>
 <script>
+    var cont = 0
     function bt() {
 
         if (tipo_jogo.value == acao.value) {
@@ -211,20 +212,70 @@
     }
     var vt_noticia = ["Sony pode reduzir produção do PlayStation 5; entenda Projeção de unidades fabricadas deve dimuinuir até março de 2022","Dois novos jogos exclusivos do Xbox foram revelados hoje pelo site Windows Central, especializado em notícias sobre os produtos da Microsoft.Os títulos são criações da Compulsion Games e da Obsidian Entertainment, dois estúdios que fazem parte do Xbox Game Studios. Por se tratarem de propriedades da própria Microsoft, os dois games devem entrar para o catálogo do Xbox Game Pass já no lançamento",
                 "O primeiro jogo revelado foi projeto Midnight, da Compulsion. De acordo com o site, o estúdio responsável pela criação de We Happy Few está trabalhando neste título de ação em terceira pessoa. O site teve acesso a três imagens do projeto, todas de estágios bem iniciais de produção, que podem ser vistas logo abaixo.","E entrando no embalo do nosso artigo dos melhores consoles, agora vamos falar um pouco sobre os jogos exclusivos de cada console, citando os melhores e tentando da melhor maneira possível fazer o trabalho de eleger os melhores jogos exclusivos para cada console dessa geração.?","Atualização de Warzone vai tirar o jogo de Verdansk e levar os jogadores para a ilha de Caldera Call Of Duty: Warzone é o jogo estilo Battle Arena da franquia que foi lançado em Março de 2020 e conquistou uma legião de jogadores. Saiu meses após o lançamento de Call Of Duty: Modern Warfare, e vem sempre trazendo atualizações, eventos e novos conteúdos das edições anteriores e posteriores à sua estreia.","Recentemente (05/11/2021), o mais novo jogo da franquia entrou em ação no mercado: Call Of Duty: Vanguard. O novo título se passa durante a Segunda Guerra Mundial, nos anos 30 e 40 do século passado, e muitas novidades e influências dele serão levadas para Warzone. Para renovar os ânimos dos jogadores, o Battle Arena vai ganhar um novo mapa: a ilha Caldera, no meio do Oceano Pacífico. Isso junto com as quase 40 armas temáticas da Segunda Guerra, presentes em Vanguard, que virão para o jogo."];
-    // function noticia() {
-    //    vt_noticia.push;
-    //     for(cont = vt_noticia.length + 1; cont >= 6; cont++) {
-           
-    //         msg_noticia.innerHTML = vt_noticia[cont];
+    function noticia() {
+            if (cont == 0){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont++
+            }
+            else if (cont == 1){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont++
+
+            }
+            else if (cont == 2){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont++
+
+            }else if (cont == 3){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont++
+
+            }else if (cont == 4){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont++
+
+            }else if (cont == 5){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont++
+
+            }
+        
+        // for(var cont = 0; cont <= vt_noticia.length-1; cont++) {
+        //     if (cont == 1){
+        //     msg_noticia.innerHTML = vt_noticia[cont];
+        //     }
                      
-    //                 }
-    //     }
+        //             }
+        }
 
 
 
     function noticia_ant() {
-        for(var cont2 = vt_noticia.length - 1; cont2 >= 0 ; cont2 --){
-            msg_noticia.innerHTML = vt_noticia[cont2];
+        if (cont == 0){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont--
+            }
+            else if (cont == 1){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont--
+
+            }
+            else if (cont == 2){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont--
+
+            }else if (cont == 3){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont--
+
+            }else if (cont == 4){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont--
+
+            }else if (cont == 5){
+                msg_noticia.innerHTML = vt_noticia[cont]
+                cont--
+
+            }
         }
-      }
 </script>
