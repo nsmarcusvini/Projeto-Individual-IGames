@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.nm{
+
+}
+.container{
+    height: 100vh;
+
+ 
+}
+
+.barras {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 2cm;
+    height: 1px; 
+    background-color: green; 
+    margin-bottom: 0vh;
+}
+.barras2 {
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+    width: 2cm;
+    height: 1px; 
+    background-color: red; 
+    margin-bottom: 0vh;
+    margin-right: 200px;
+}
+</style>
+<body>
+    <div class="container">
+    <div class="nm" style="height:50px;">
+    </div>
+        <div class="barras" id="barra"></div>
+        <div class="barras2" id="barra2"></div>
+    
+    </div>
+    <button onclick="atualizar()">Atualizar</button>
+    <button onclick="atualizar2()">Atualizar</button>
+    
+
+
+</body>
+</html>
+<script>
+    var qtd1 = 0;
+     var   qtd2 = 0;
+    function atualizar(){
+        barra.style.height = `${qtd1 += 5}px`;
+    }
+    function atualizar2(){
+        barra2.style.height = `${qtd2 += 5}px`;
+    }
+    
+</script>
