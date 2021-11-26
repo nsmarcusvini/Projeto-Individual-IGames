@@ -52,12 +52,10 @@
             <div class="card medio">
                 
                 <div class="formulario">
-                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <form id="form_cadastro" onsubmit="return cadastrar()">
                         Usuário:
                         <input name="nome" type="text" placeholder="ex:nsmarcusvini">
                         <br>
-                        Idade:
-                        <input name="idade" type="text" placeholder="ex:18">
                         <br>
                         E-mail:
                         <input name="email" type="text" placeholder="ex:xxxxxxx@xxxx.com.br">
@@ -67,6 +65,20 @@
                         <br>
                         Confirmação da Senha:
                         <input name="confirmacao-senha" type="password" placeholder="******">
+                        <br>
+                        <select name="jogo_fav">
+                            <option value="">Selecione um jogo</option>
+                            <option value="">FIFA</option>
+                            <option value="">FREE FIRE</option>
+                            <option value="">COD- WARZONE</option>
+                            <option value="">FORTNITE</option>
+                            <option value="">LEAGUE OF LEGENDS</option>
+                            <option value="">CS-GO</option>
+                            <option value="">GOD OF WAR</option>
+                            <option value="">VALORANT</option>
+                            <option value="">GTA V</option>
+                            <option value="">THE LAST OF US II</option>
+                        </select>
                         <br>
                         <button class="btn">Cadastrar</button>
                     </form>
@@ -86,12 +98,21 @@
    
     <div class="footer">
         <div class="msg_footer">
-            Desenvolvido com amor por um aluno São Paulo Tech School ©!   /
+            Desenvolvido com amor por um aluno São Paulo Tech School ©! /Marcus Vinicius N Souza - 1ADS/A - RA: 01212114
+            <br>
+            <br>
             
+            <center>
+            <a href="https://www.facebook.com/profile.php?id=100003224338300"> <img src="https://cdn.icon-icons.com/icons2/694/PNG/512/Facebook_Rounded_icon-icons.com_61578.png" style="height: 50px; width: 50px;"></a>
+           <a href="https://www.instagram.com/nsmarcusvini/"><img src="https://cdn.icon-icons.com/icons2/1294/PNG/512/2362135-instagram-photo-round-social_85523.png" style="height: 50px; width: 50px;"></a>
+            <a href="https://github.com/nsmarcusvini/Projeto-Individual-IGames.git"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height: 50px; width: 50px;"></a>
+        </center>
         </div>
-        <div class="msg_nome_footer">Marcus Vinicius N Souza - 1ADS/A - RA: 01212114
+        
+        </div>
     
-        </div>
+    
+    </div>
 
     <!--footer fim-->
     
@@ -115,9 +136,10 @@
         var email = formulario.get("email");
         var senha = formulario.get("senha");
         var confirmacaoSenha = formulario.get("confirmacao-senha");
+        var jogo_favorito = formulario.get("Escolha seu jogo favorito");
 
         // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
-        if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
+        if (jogo_favorito ==""|| nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
             
             window.alert("Preencha todos os campos para prosseguir!");
             if (nome == "")  {
@@ -131,6 +153,9 @@
             }
             if (confirmacaoSenha == "" )  {
                 console.log('confirmacaoSenha está em branco')
+            }
+            if(jogo_favorito == ""){
+                console.log('Selecione um jogo')
             }
             finalizarAguardar();
             return false;

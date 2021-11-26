@@ -51,38 +51,57 @@
             </div>
         </div>
     </div>
-
+    
 
     <div class="graph">
-        <canvas id="myChart" style="width: 100%; height: 100%;"></canvas>
+        <canvas id="myChart" style="width: 100%; height: 100%;"> </canvas>
       </div>
+      
 </body>
-
+<span style="background-color:rgb(250, 232, 236) ; opacity: 0,5;"></span>
 </html>
 <script>
+    var aleatorio_dash1 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash2 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash3 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash4 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash5 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash6 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash7 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash8 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash9 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash10 = Math.random() *(1100 - 500) + 500;
+    var aleatorio_dash11 = Math.random() *(1100 - 500) + 500;
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: [ 'FIFA', "FREE FIRE", "COD - WARZONE", "FORTNITE", "LEAGUE OF LEGENDS", "CS-GO", "GOD OF WRA","RED DEAD REDEMPTION 2", "VALOANT","GTA V","THE LAST OF US II" ],
         datasets: [{
-            label: 'JOGOS MAIS JOGADOS NAS ULTIMAS DÉCADAS',
-            data: [540.00, 622.00, 678.00, 724.00, 788.00, 880.00, 937.00, 954.00, 998.00, 1045.00, 1100.00],
+            label: 'JOGOS MAIS JOGADOS NOS ÚLTIMOS MESES',
+            data: [aleatorio_dash1.toFixed(3), aleatorio_dash2.toFixed(3), aleatorio_dash3.toFixed(3), aleatorio_dash4.toFixed(3), aleatorio_dash5.toFixed(3), aleatorio_dash6.toFixed(3), aleatorio_dash7.toFixed(3), aleatorio_dash8.toFixed(3),aleatorio_dash9.toFixed(3), aleatorio_dash10.toFixed(3), aleatorio_dash11.toFixed(3)],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
+                
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(153, 102, 255, 1)'
+            
             ],
             borderWidth: 1
         }]

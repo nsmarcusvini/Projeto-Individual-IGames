@@ -54,7 +54,7 @@ body {
     font-family: 'Exo 2';
    background-attachment: fixed;
    background-size: cover;
-   background-color: whitesmoke;
+   background-image: url(https://services.meteored.com/img/article/o-que-torna-o-ceu-azul-195151-1_1280.jpg);
     border-radius: 30px;
 }
 
@@ -235,117 +235,9 @@ body {
 
 
 
-.footer {
-    background-image: url(https://i.pinimg.com/736x/4c/cb/bd/4ccbbdfbbc2d5fdddc1359856be97183.jpg);
-    height: 150px;
-    color: black;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    border-radius: 30px;
-    align-items: center;
-    background-size: cover;
-    
-}
-
-.footer .container {
-    display: flex;
-    justify-content: center;
-}
 
 
 
-/* LOGIN */
-
-.banner-login {
-    color: black;
-    height: 550px;
-    /* border: 3px solid yellow; */
-    background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-    
-    border-radius: 50px;
-    
-}
-
-.banner-login .container {
-    height: 550px;
-    /* border: 3px solid green; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-login {
-    color: white;
-}
-
-
-
-.banner-login a {
-    color: white;
-    text-decoration: none;
-}
-
-.banner-login #div_erros_login {
-    margin-top: 15px;
-}
-
-button {
-    cursor: pointer;
-}
-
-/* FORMULARIO */
-
-input {
-    height: 30px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.btn {
-    font-family: 'Exo 2', sans-serif;
-    border: 0;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 10px 15px;
-    color: whitesmoke;
-    background-color: black;
-    width: 120px;
-    align-self: center;
-    
-}
-.btn {
-    color: white;
-    background: black;
-    transition: background 1s;
-    border-radius: 10px;
-}
-  
-  .btn:hover,
-  .btn:focus {
-    background: gray; 
-}
-  
-
-
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.loading-div {
-    width: 50px;
-    /* border: 3px solid pink; */
-    margin: auto;
-    display: none;
-}
-
-.loading-div img {
-    height: 50px;
-    width: 50px;
-}
 
 /* PAGINA DOS GRÁFICOS */
 
@@ -482,19 +374,13 @@ form {
     border-radius: 30px;
 }
   
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
- 
   
   .graph {
-    
+    background-color:black;
     width: 800px;
     height: 400PX;
    margin-left: 800px;
+   border-radius: 10px;
    
   }
   .titulo_msg{
