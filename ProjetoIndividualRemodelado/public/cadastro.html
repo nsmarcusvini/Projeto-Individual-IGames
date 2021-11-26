@@ -66,18 +66,18 @@
                         Confirmação da Senha:
                         <input name="confirmacao-senha" type="password" placeholder="******">
                         <br>
-                        <select name="jogo_fav">
+                        <select name="jogo_fav" id="jogo_favorito" style="border-radius: 20px; color: black; border: black 2px solid;">
                             <option value="">Selecione um jogo</option>
-                            <option value="">FIFA</option>
-                            <option value="">FREE FIRE</option>
-                            <option value="">COD- WARZONE</option>
-                            <option value="">FORTNITE</option>
-                            <option value="">LEAGUE OF LEGENDS</option>
-                            <option value="">CS-GO</option>
-                            <option value="">GOD OF WAR</option>
-                            <option value="">VALORANT</option>
-                            <option value="">GTA V</option>
-                            <option value="">THE LAST OF US II</option>
+                            <option value="1">FIFA</option>
+                            <option value="2">FREE FIRE</option>
+                            <option value="3">COD- WARZONE</option>
+                            <option value="4">FORTNITE</option>
+                            <option value="5">LEAGUE OF LEGENDS</option>
+                            <option value="6">CS-GO</option>
+                            <option value="7">GOD OF WAR</option>
+                            <option value="8">VALORANT</option>
+                            <option value="9">GTA V</option>
+                            <option value="10">THE LAST OF US II</option>
                         </select>
                         <br>
                         <button class="btn">Cadastrar</button>
@@ -136,10 +136,10 @@
         var email = formulario.get("email");
         var senha = formulario.get("senha");
         var confirmacaoSenha = formulario.get("confirmacao-senha");
-        var jogo_favorito = formulario.get("Escolha seu jogo favorito");
+        var jogo_fav = formulario.get("jogo_fav");
 
         // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
-        if (jogo_favorito ==""|| nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
+        if (jogo_fav ==""|| nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
             
             window.alert("Preencha todos os campos para prosseguir!");
             if (nome == "")  {
@@ -154,7 +154,7 @@
             if (confirmacaoSenha == "" )  {
                 console.log('confirmacaoSenha está em branco')
             }
-            if(jogo_favorito == ""){
+            if(jogo_fav == ""){
                 console.log('Selecione um jogo')
             }
             finalizarAguardar();

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>𝕀𝔾𝕒𝕞𝕖𝕤</title>
-    
+
     <link rel="stylesheet" href="dashboard.css">
     <script src="../assets/js/funcoes.js"></script>
 
@@ -22,9 +22,10 @@
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario"></span>!</h3>
+
             </div>
 
-            
+
 
             <div class="btn-nav">
                 <a href=""></a>
@@ -45,75 +46,131 @@
         </div>
 
         <div class="dash">
-                        
+
             <div class="graph">
                 <canvas id="canvas_grafico"></canvas>
             </div>
         </div>
     </div>
-    
+
 
     <div class="graph">
         <canvas id="myChart" style="width: 100%; height: 100%;"> </canvas>
-      </div>
-      
+    </div>
+
 </body>
 <span style="background-color:rgb(250, 232, 236) ; opacity: 0,5;"></span>
+
 </html>
 <script>
-    var aleatorio_dash1 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash2 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash3 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash4 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash5 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash6 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash7 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash8 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash9 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash10 = Math.random() *(1100 - 500) + 500;
-    var aleatorio_dash11 = Math.random() *(1100 - 500) + 500;
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: [ 'FIFA', "FREE FIRE", "COD - WARZONE", "FORTNITE", "LEAGUE OF LEGENDS", "CS-GO", "GOD OF WRA","RED DEAD REDEMPTION 2", "VALOANT","GTA V","THE LAST OF US II" ],
-        datasets: [{
-            label: 'JOGOS MAIS JOGADOS NOS ÚLTIMOS MESES',
-            data: [aleatorio_dash1.toFixed(3), aleatorio_dash2.toFixed(3), aleatorio_dash3.toFixed(3), aleatorio_dash4.toFixed(3), aleatorio_dash5.toFixed(3), aleatorio_dash6.toFixed(3), aleatorio_dash7.toFixed(3), aleatorio_dash8.toFixed(3),aleatorio_dash9.toFixed(3), aleatorio_dash10.toFixed(3), aleatorio_dash11.toFixed(3)],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-                
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)'
-            
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+    var aleatorio_dash1 = 0;
+    var aleatorio_dash2 = 0;
+    var aleatorio_dash3 = 0;
+    var aleatorio_dash4 = 0;
+    var aleatorio_dash5 = 0;
+    var aleatorio_dash6 = 0;
+    var aleatorio_dash7 = 0;
+    var aleatorio_dash8 = 0;
+    var aleatorio_dash9 = 0;
+    var aleatorio_dash10 = 0;
+    var aleatorio_dash11 = 0;
+    function grafico(){
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['FIFA', "FREE FIRE", "COD - WARZONE", "FORTNITE", "LEAGUE OF LEGENDS", "CS-GO", "GOD OF WRA", "RED DEAD REDEMPTION 2", "VALOANT", "GTA V", "THE LAST OF US II"],
+            datasets: [{
+                label: 'USUÁRIOS',
+                data: [aleatorio_dash1.toFixed(3), aleatorio_dash2.toFixed(3), aleatorio_dash3.toFixed(3), aleatorio_dash4.toFixed(3), aleatorio_dash5.toFixed(3), aleatorio_dash6.toFixed(3), aleatorio_dash7.toFixed(3), aleatorio_dash8.toFixed(3), aleatorio_dash9.toFixed(3), aleatorio_dash10.toFixed(3), aleatorio_dash11.toFixed(3)],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
+    });
     }
-});
- 
-   
+    function tudo() {
+        fetch("/usuarios/listar", {
+            method: "GET",
+        }).then(function (resposta) {
+
+
+            resposta.json().then(function (data) {
+                let len = data.length;
+
+                for (let i = 0; i <= len; i++) {
+                    let arquivo = data[i];
+                    if (arquivo.jogo == 1) {
+                        aleatorio_dash1++;
+
+                    }
+                    if (arquivo.jogo == 2) {
+                        aleatorio_dash2++;
+                    }
+                    if (arquivo.jogo == 3) {
+                        aleatorio_dash3++;
+                    }
+                    if (arquivo.jogo == 4) {
+                        aleatorio_dash4++;
+                    }
+                    if (arquivo.jogo == 5) {
+                        aleatorio_dash5++;
+                    }
+                    if (arquivo.jogo == 6) {
+                        aleatorio_dash6++;
+                    }
+                    if (arquivo.jogo == 7) {
+                        aleatorio_dash7++;
+                    }
+                    if (arquivo.jogo == 8) {
+                        aleatorio_dash8++;
+                    }
+                    if (arquivo.jogo == 9) {
+                        aleatorio_dash9++;
+                    }
+                    if (arquivo.jogo == 10) {
+                        aleatorio_dash10++;
+                    }
+                    if (arquivo.jogo == 11) {
+                        aleatorio_dash11++;
+                    }
+                    
+    grafico();
+                }
+
+            });
+        }).catch(function (error) {
+            console.error(`ERROR`, error);
+        });
+    }
+    tudo();
 </script>

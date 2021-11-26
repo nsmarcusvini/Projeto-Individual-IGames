@@ -63,19 +63,19 @@ function cadastrar(req, res) {
     var nome = req.body.nome;
     var email = req.body.email;
     var senha = req.body.senha;
-    var jogo_favorito = req.body.jogo_favorito;
+    var jogo_fav = req.body.jogo_fav;
 
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
     } else if (email == undefined) {
         res.status(400).send("Seu email está undefined!");
     } else if (senha == undefined) {
-    } else if (jogo_favorito == undefined) {
+    } else if (jogo_fav == undefined) {
         res.status(400).send("Sua escolha está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
     } else {
-        usuarioModel.cadastrar(nome,  email, senha, jogo_favorito)
+        usuarioModel.cadastrar(nome,  email, senha, jogo_fav)
         .then(
             function (resultado) {
                 res.json(resultado);

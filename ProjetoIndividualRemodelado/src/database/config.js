@@ -22,7 +22,7 @@ var mySqlConfig = {
     host: "127.0.0.1",
     user: "root",
     database: "igames",
-    password: "",
+    password: "bandtec",
 };
 
 function executar(instrucao) {
