@@ -54,7 +54,7 @@ body {
     font-family: 'Exo 2';
    background-attachment: fixed;
    background-size: cover;
-   background-image: url(https://services.meteored.com/img/article/o-que-torna-o-ceu-azul-195151-1_1280.jpg);
+   background-color: black;
     border-radius: 30px;
 }
 
@@ -378,7 +378,7 @@ body {
   .graph {
     background-color:black;
     width: 500px;
-    height: 250PX;
+    height: 200PX;
    margin-left: 500px;
    border-radius: 2px;
    opacity: 1.0;
