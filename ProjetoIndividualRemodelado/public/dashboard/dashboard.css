@@ -263,7 +263,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-right: 3px solid #32B9CD;
+    border-right: 3px solid black;
     background-color: #212124;
     /* border: 3px solid pink; */
 }
@@ -279,7 +279,7 @@ body {
 }
 
 .header-left h1 {
-    color: #32B9CD;
+    color: black;
 }
 
 .hello {
@@ -301,7 +301,7 @@ body {
 .btn-nav {
     width: 40%;
     color: white;
-    background-color: #00a5e6;
+    background-color: black;
     border-radius: 5px;
     text-align: center;
     padding: 2% 5%;
@@ -310,19 +310,19 @@ body {
 .btn-nav-white {
     width: 40%;
     background-color: white;
-    border: 3px solid #00a5e6;
+    border: 3px solid black;
     border-radius: 5px;
     text-align: center;
     padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-    color: #00a5e6;
+    color: black;
     padding: 0;
     margin: 0;
 }
 .box_botao{
-    background-color: cornflowerblue;
+    background-color: blue;
     border-radius: 20px;
     
 }
@@ -337,7 +337,7 @@ body {
     margin: 0;
     padding: 0;
     width: 20%;
-    background-color: #32B9CD;
+    background-color: black;
     color: white;
     border-radius: 10px;
     text-align: center;
@@ -352,7 +352,7 @@ body {
 }
 
 .box_noticia{
-    background-color: cornflowerblue;
+    background-color: red;
     border-radius: 20px;
     
 }
@@ -377,11 +377,11 @@ body {
   
   .graph {
     background-color:black;
-    width: 800px;
-    height: 400PX;
-   margin-left: 800px;
-   border-radius: 10px;
-   
+    width: 500px;
+    height: 250PX;
+   margin-left: 500px;
+   border-radius: 2px;
+   opacity: 1.0;
   }
   .titulo_msg{
       margin-left: 1140px;
