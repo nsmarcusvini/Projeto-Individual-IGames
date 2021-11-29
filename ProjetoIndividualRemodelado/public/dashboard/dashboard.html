@@ -51,8 +51,9 @@
                 <canvas id="canvas_grafico"></canvas>
             </div>
         </div>
+        <center><p style="color: white;">Você tem: <b id="metricas"></b> usuários cadastrados</p></center>
     </div>
-
+    
 
     <div class="graph">
         <center> <span style="color: white;">Gráfico de Usuário: <br><br>
@@ -128,7 +129,7 @@
 
             resposta.json().then(function (data) {
                 let len = data.length;
-
+                document.getElementById("metricas").innerHTML = len;
                 for (let i = 0; i <= len; i++) {
                     let arquivo = data[i];
                     if (arquivo.jogo == 1) {
